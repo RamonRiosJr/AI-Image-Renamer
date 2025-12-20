@@ -1,0 +1,5 @@
+{
+  "name": "AI Image Renamer",
+  "description": "An application that uses AI to analyze multiple images and suggests descriptive, SEO-friendly filenames. Users can upload images, let the AI generate new names, and download the renamed files.",
+  "requestFramePermissions": []
+}
