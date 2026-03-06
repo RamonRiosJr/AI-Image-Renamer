@@ -68,16 +68,16 @@ We use [Conventional Commits](https://conventionalcommits.org):
 
 **Types:**
 
-| Type | Description |
-|------|-------------|
-| `feat` | New feature |
-| `fix` | Bug fix |
-| `chore` | Maintenance, no user-facing change |
-| `docs` | Documentation only |
-| `ci` | CI/CD pipeline changes |
-| `test` | Adding or fixing tests |
-| `refactor` | Code restructuring |
-| `security` | Security fix |
+| Type       | Description                        |
+| ---------- | ---------------------------------- |
+| `feat`     | New feature                        |
+| `fix`      | Bug fix                            |
+| `chore`    | Maintenance, no user-facing change |
+| `docs`     | Documentation only                 |
+| `ci`       | CI/CD pipeline changes             |
+| `test`     | Adding or fixing tests             |
+| `refactor` | Code restructuring                 |
+| `security` | Security fix                       |
 
 **Examples:**
 
@@ -104,7 +104,7 @@ docs(readme): clarify PAT scope requirements
 
 All scripts in this repository must adhere to the following standards:
 
-### PowerShell (*.ps1)
+### PowerShell (\*.ps1)
 
 ```powershell
 #Requires -Version 7
@@ -117,7 +117,7 @@ All scripts in this repository must adhere to the following standards:
   ```powershell
   # ❌ Wrong — fragile with double-quoted field names
   $mut = "mutation { createProjectV2(input: { title: `"$title`" }) { ... } }"
-  
+
   # ✅ Correct — safe and explicit
   $mut = 'mutation { createProjectV2(input: { title: "' + $title + '" }) { ... } }'
   ```
@@ -126,7 +126,7 @@ All scripts in this repository must adhere to the following standards:
 - **Idempotent** — check before create, skip if exists
 - **Summary at end** — always print `✅ Created`, `⏭️ Skipped`, `❌ Errors` counts
 
-### Bash (*.sh)
+### Bash (\*.sh)
 
 ```bash
 #!/usr/bin/env bash
@@ -184,7 +184,7 @@ git push origin v1.1.0
 
 ---
 
-*Thank you for making gh-repo-bootstrap better for everyone!* 🚀
+_Thank you for making gh-repo-bootstrap better for everyone!_ 🚀
 
 ---
 

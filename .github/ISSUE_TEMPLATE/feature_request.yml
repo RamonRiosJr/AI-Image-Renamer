@@ -1,7 +1,7 @@
 name: ✨ Feature Request
 description: Propose a new feature or enhancement
-title: "feat: "
-labels: ["type: feature", "P2: medium"]
+title: 'feat: '
+labels: ['type: feature', 'P2: medium']
 assignees: []
 
 body:
@@ -16,7 +16,7 @@ body:
     attributes:
       label: Problem Statement
       description: What problem are you trying to solve? What user need does this address?
-      placeholder: "As a [user type], I want [goal] so that [reason]."
+      placeholder: 'As a [user type], I want [goal] so that [reason].'
     validations:
       required: true
 

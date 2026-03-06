@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { SparklesIcon } from './icons/SparklesIcon';
 
@@ -14,7 +13,8 @@ const Header: React.FC = () => {
             </h1>
           </div>
           <p className="mt-2 text-slate-400 max-w-2xl mx-auto">
-            Upload your images and let AI generate descriptive, SEO-friendly filenames instantly. Perfect for web-ready assets.
+            Upload your images and let AI generate descriptive, SEO-friendly filenames instantly.
+            Perfect for web-ready assets.
           </p>
         </div>
       </div>
