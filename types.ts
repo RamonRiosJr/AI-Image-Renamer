@@ -1,4 +1,3 @@
-
 export type ProcessingStatus = 'pending' | 'processing' | 'processed' | 'error';
 
 export interface ImageFile {
