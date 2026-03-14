@@ -4,73 +4,72 @@
 
 version: 2
 updates:
-
   # ── npm ────────────────────────────────────────────────────────────────────
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'npm'
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "09:00"
-      timezone: "America/New_York"
-    target-branch: "master"
+      interval: 'weekly'
+      day: 'monday'
+      time: '09:00'
+      timezone: 'America/New_York'
+    target-branch: 'master'
     open-pull-requests-limit: 10
     labels:
-      - "type: chore"
-      - "epic: infrastructure"
-      - "P3: low"
+      - 'type: chore'
+      - 'epic: infrastructure'
+      - 'P3: low'
     commit-message:
-      prefix: "chore(deps)"
-      prefix-development: "chore(dev-deps)"
-      include: "scope"
+      prefix: 'chore(deps)'
+      prefix-development: 'chore(dev-deps)'
+      include: 'scope'
     groups:
       minor-and-patch:
         patterns:
-          - "*"
+          - '*'
         update-types:
-          - "minor"
-          - "patch"
+          - 'minor'
+          - 'patch'
     ignore:
       # Pin major version upgrades for manual review
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+      - dependency-name: '*'
+        update-types: ['version-update:semver-major']
     reviewers:
-      - "RamonRiosJr"
+      - 'RamonRiosJr'
     assignees:
-      - "RamonRiosJr"
+      - 'RamonRiosJr'
 
   # ── github-actions ─────────────────────────────────────────────────────────
-  - package-ecosystem: "github-actions"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "09:00"
-      timezone: "America/New_York"
-    target-branch: "master"
+      interval: 'weekly'
+      day: 'monday'
+      time: '09:00'
+      timezone: 'America/New_York'
+    target-branch: 'master'
     open-pull-requests-limit: 5
     labels:
-      - "type: chore"
-      - "epic: infrastructure"
-      - "P3: low"
+      - 'type: chore'
+      - 'epic: infrastructure'
+      - 'P3: low'
     commit-message:
-      prefix: "ci(actions)"
-      include: "scope"
+      prefix: 'ci(actions)'
+      include: 'scope'
 
   # ── docker ─────────────────────────────────────────────────────────────────
-  - package-ecosystem: "docker"
-    directory: "/"
+  - package-ecosystem: 'docker'
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "monday"
-      time: "09:00"
-      timezone: "America/New_York"
-    target-branch: "master"
+      interval: 'weekly'
+      day: 'monday'
+      time: '09:00'
+      timezone: 'America/New_York'
+    target-branch: 'master'
     open-pull-requests-limit: 5
     labels:
-      - "type: chore"
-      - "epic: infrastructure"
-      - "P2: medium"
+      - 'type: chore'
+      - 'epic: infrastructure'
+      - 'P2: medium'
     commit-message:
-      prefix: "chore(docker)"
-      include: "scope"
+      prefix: 'chore(docker)'
+      include: 'scope'

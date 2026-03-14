@@ -1,7 +1,7 @@
 name: ✅ Compliance Task
 description: Track a regulatory requirement, audit finding, or policy obligation
-title: "compliance: "
-labels: ["type: compliance", "epic: compliance", "P1: high"]
+title: 'compliance: '
+labels: ['type: compliance', 'epic: compliance', 'P1: high']
 assignees: []
 
 body:
@@ -36,7 +36,7 @@ body:
     attributes:
       label: Control / Requirement Reference
       description: Specific control number or requirement ID (e.g., HIPAA §164.312(a)(1))
-      placeholder: "e.g., HIPAA §164.312(a)(1)"
+      placeholder: 'e.g., HIPAA §164.312(a)(1)'
     validations:
       required: false
 
@@ -69,7 +69,7 @@ body:
     attributes:
       label: Compliance Deadline
       description: When must this be completed? (audit date, regulatory deadline, etc.)
-      placeholder: "YYYY-MM-DD"
+      placeholder: 'YYYY-MM-DD'
     validations:
       required: false
 

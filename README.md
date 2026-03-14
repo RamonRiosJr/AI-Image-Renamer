@@ -32,37 +32,37 @@ An intelligent, SEO-focused image management tool that leverages **Google Gemini
 
 1. **Clone the repository**:
 
-    ```bash
-    git clone https://github.com/RamonRiosJr/AI-Image-Renamer.git
-    cd AI-Image-Renamer
-    ```
+   ```bash
+   git clone https://github.com/RamonRiosJr/AI-Image-Renamer.git
+   cd AI-Image-Renamer
+   ```
 
 2. **Install dependencies**:
 
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 
 3. **Set up environment variables**:
-    Create a `.env.local` file in the root directory:
+   Create a `.env.local` file in the root directory:
 
-    ```bash
-    cp .env.example .env.local
-    ```
+   ```bash
+   cp .env.example .env.local
+   ```
 
-    Edit `.env.local` and add your Gemini API key:
+   Edit `.env.local` and add your Gemini API key:
 
-    ```env
-    GEMINI_API_KEY=your_actual_key_here
-    ```
+   ```env
+   GEMINI_API_KEY=your_actual_key_here
+   ```
 
 4. **Run the application**:
 
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 
-    Open `http://localhost:3000` in your browser.
+   Open `http://localhost:3000` in your browser.
 
 ## 🤝 Contributing
 
@@ -75,4 +75,5 @@ Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
+
 Built with ❤️ by [Ramon Rios](https://github.com/RamonRiosJr)

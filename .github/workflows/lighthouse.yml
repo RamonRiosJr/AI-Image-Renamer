@@ -5,9 +5,9 @@ on:
   workflow_dispatch:
     inputs:
       url:
-        description: "URL to audit"
+        description: 'URL to audit'
         required: true
-        default: "https://your-app.vercel.app"
+        default: 'https://your-app.vercel.app'
 
 jobs:
   lighthouse:
@@ -34,7 +34,7 @@ jobs:
         uses: treosh/lighthouse-ci-action@v11
         with:
           urls: ${{ steps.url.outputs.target }}
-          configPath: ".lighthouserc.json"
+          configPath: '.lighthouserc.json'
           uploadArtifacts: true
           temporaryPublicStorage: true
 
