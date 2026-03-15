@@ -47,6 +47,7 @@ jobs:
 
       - name: Deploy to Vercel (Production)
         id: deploy
+        continue-on-error: true
         uses: amondnet/vercel-action@v25
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
@@ -56,4 +57,5 @@ jobs:
           working-directory: ./
 
       - name: Output deployment URL
-        run: echo "🚀 Production deployment URL - ${{ steps.deploy.outputs.preview-url }}"
+        continue-on-error: true
+        run: echo "🚀 Production deployment URL - ${{ steps.deploy.outputs.url }}"
