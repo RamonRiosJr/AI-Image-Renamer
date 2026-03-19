@@ -1,10 +1,9 @@
 ---
 name: Bug Report
 about: Create a report to help us improve AI Image Renamer.
-title: "[BUG] "
+title: '[BUG] '
 labels: bug
 assignees: ''
-
 ---
 
 **Describe the bug**

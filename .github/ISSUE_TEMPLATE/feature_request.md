@@ -1,10 +1,9 @@
 ---
 name: Feature Request
 about: Suggest an idea for AI Image Renamer.
-title: "[FEAT] "
+title: '[FEAT] '
 labels: enhancement
 assignees: ''
-
 ---
 
 **Is your feature request related to a problem? Please describe.**
